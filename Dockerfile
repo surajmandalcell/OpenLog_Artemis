@@ -77,6 +77,7 @@ RUN sed -i 's|//#define ICM|#define ICM|g' /root/Arduino/libraries/SparkFun_9DoF
 # echo "compiler.c.extra_flags=-MMD -g3" >> /root/.arduino15/packages/SparkFun/hardware/apollo3/2.2.1/platform.local.txt
 # echo "compiler.cxx.extra_flags=-MMD -g3" >> /root/.arduino15/packages/SparkFun/hardware/apollo3/2.2.1/platform.local.txt
 
-WORKDIR /work/Firmware/OpenLog_Artemis
+# WORKDIR /work/Firmware/OpenLog_Artemis
+WORKDIR /work/Firmware/AOA_OpenLog_Artemis
 
 CMD arduino-cli compile --build-cache-path /tmp/cache -v -e -b SparkFun:apollo3:sfe_artemis_atp
